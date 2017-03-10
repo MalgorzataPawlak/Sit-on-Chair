@@ -1,0 +1,110 @@
+*{
+  margin: 0;
+  padding: 0;
+  }
+body {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+  }
+header {
+  border: 1px solid red;
+  color: white;
+  width: 100%;
+}
+.black {
+  background-color: black;
+  color: white;
+  height: 50px;
+  width: 100%;
+}
+span {
+  color: rgb(36, 186, 159);
+}
+.max_width {
+  width: 900px;
+  margin: 0 auto;
+  }
+  h1 {
+    padding: 15px;
+    float: left;
+    font-size: 14px;
+
+  }
+  nav {
+    float: right;
+    color: white;
+  }
+  h2 {
+    font-size: 2em;
+    margin-top: 60px;
+    margin-bottom: 10px;
+  }
+  li {
+    color: white;
+    font-size: 14px;;
+    padding: 15px;
+    display: inline-block;
+    font-size: 14px;
+  }
+  .lorem {
+    text-align: center;
+    color: gray;
+    margin-bottom: 30px;
+  }
+  .przewijanie {
+    float: left;
+    display: inline-block;
+    height: 100%;
+  }
+  .fotel {
+      float: left;
+      display: inline-block;
+      margin: 0 auto;
+      height: 100%;
+
+  }
+  .tekst {
+    display: inline-block;
+    width: 300px;
+    margin: 0 auto;
+    height: 100%;
+  }
+.przewijanie2 {
+  float: right;
+  height: 300px;
+}
+ {
+    height: 100%;
+}
+.zobacz {
+  color: white;
+  background-color: rgb(36, 186, 159);
+  width: 220px;
+  height: 50px;
+  border-radius: 5%;
+  margin: 0 auto;
+  font-size: 1.5em;
+  padding-top: 5px;
+  text-align: center;;
+}
+btn {
+  margin: 0 auto;
+}
+.small_box {
+  width: 240px;
+  height: 180px;
+  border: 1px solid black;
+  display: inline-block;
+  float: left;
+  margin: 10px;
+
+}
+.biala::after {
+  clear:both;
+  display: block;
+  content: "";
+}
+.Clair {
+  backgrund-image: url("box1_img.jpg");
+  background-size: cover;
+}
