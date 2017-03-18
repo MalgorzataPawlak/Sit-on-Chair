@@ -5,6 +5,7 @@
 body {
     font-family: Arial, sans-serif;
     font-size: 14px;
+    width: 1200px;
   }
 header {
   border: 1px solid red;
@@ -15,19 +16,35 @@ div {
   border: 1px solid red;
   box-sizing: border-box;
 }
+section, header {
+  width: 100%;
+}
 .black {
   background-color: black;
   color: white;
-  height: 50px;
+  height: 40px;
   width: 100%;
+}
+.max_width {
+  width: 1060px;
+  margin-left: 70px;
+  margin-right: 70px;
+  position: relative;
+}
+.row {
+  display: inline-block;
+  float: left;
+  margin: 0 auto;
+
+}
+
+/* header*/
+header {
+  height: 45px;
 }
 span {
   color: rgb(36, 186, 159);
 }
-.max_width {
-  width: 900px;
-  margin: 0 auto;
-  }
 h1 {
   padding: 15px;
   float: left;
@@ -49,38 +66,45 @@ li {
   display: inline-block;
   font-size: 14px;
 }
+
+/*sekcja gradient*/
 .gradient {
+  height: 400px;
   background-image: linear-gradient(#fcfff4);
   background: #fcfff4; /* Old browsers */
   background: -moz-linear-gradient(top, #fcfff4 0%, #dfe5d7 75%, #b3bead 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(top, #fcfff4 0%,#dfe5d7 75%,#b3bead 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, #fcfff4 0%,#dfe5d7 75%,#b3bead 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=0 ); /* IE6-9 */
-copy);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=0); /* IE6-9 */
+
+}
+.scrolling {
+  height: 400px;
+  width: 46px;
+  float: left;
+  display: inline-block;
+  font-size: 4em;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .lorem {
   text-align: center;
   color: gray;
   margin-bottom: 30px;
 }
-.przewijanie {
-  float: left;
-  display: inline-block;
-  height: 100%;
-  width: 10%;
-}
-.fotel {
+
+.armchair {
   float: left;
   display: inline-block;
   margin: 0 auto;
-  height: 100%;
+  height: 400px;
   width: 30%;
-  background-image: url("../images/black_chair.png");
-}
-.tekst {
+  position: absolute;
+  }
+.text {
   display: inline-block;
   margin: 0 auto;
-  height: 100%;
+  height: 400px;
   width: 40%;
   padding: 20px;
   text-align: center;
@@ -92,6 +116,9 @@ button {
   width: 180px;
   height: 40px;
   border-radius: 10px;
+}
+.over_boxes {
+  height: 50px;
 }
 .small_box {
   width: 31%;
@@ -110,7 +137,7 @@ button {
   background-size: cover;
   position: relative;
 }
-.pasek {
+.bar {
   opacity: 0.5;
   position: absolute;
   height: 50px;
@@ -126,18 +153,17 @@ button {
 .horizontal {
   height: 180px;
 }
+.pricelist {
+  height: 80px;
+}
+.clear {
+  clear:both;
+  display: block;
+}
 .max_width::after {
   clear:both;
   display: block;
   content: "";
-}
-.Clair {
-  background-image: url("/../images/box1_img.jpg");
-  background-size: cover;
-}
-.Margarita {
-  background-image: url("/../images/box2_img.jpg");
-  background-size: cover;
 }
 h3 {
   font-weight: 600;
@@ -146,14 +172,29 @@ h3 {
   margin-left: 20px;
   font-size: 1.1em;
 }
-.maly {
+.name {
+  font-size: 0.95em;
+  color: black;
+  margin-left: 20px;
+  margin-top: 5px;
+  padding: 5px;
+  font-weight: 600;
+}
+.small {
   font-size: 0.85em;
   color: grey;
   margin-left: 20px;
   margin-top: 5px;
+  padding: 5px;
+  font-weight: 200;
 }
 h4 {
   color: gray;
+  padding-left: 15px;
+  margin-top:5px;
+}
+.grey {
+  background-color: #eeeeee;
 }
 .prostokat {
   border: 4px solid black;
@@ -183,8 +224,10 @@ h4 {
   z-index: 2;
   margin: 0 auto;
 }
-.turkus {
-  color: rgb(36, 186, 159);
+.line {
+  background-color: rgb(36, 186, 159);
+  height: 5px;
+  margin-bottom: 12px;
 }
 .plan {
   font-size: 1.2em;
@@ -213,4 +256,27 @@ h4 {
   margin-top:20px;
   margin-bottom: 5px;
   font-size: 1,5em;
+}
+.slice {
+  width: 100%;
+}
+.left_area {
+width: 63%;
+}
+.right_area {
+width: 27%;
+float: right;
+}
+.icons {
+  height: 12px;
+  display: block;
+  height:
+}
+.sit {
+  text-align: right;
+  font-weight: 700;
+}
+.sitOn {
+  display: block;
+  float: right;
 }
