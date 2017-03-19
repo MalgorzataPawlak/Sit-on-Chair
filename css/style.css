@@ -30,16 +30,10 @@ header {
   width: 100%;
 }
 div {
-  border: 1px solid red;
+  border: 0px solid red;
   box-sizing: border-box;
 }
 section, header, footer {
-  width: 100%;
-}
-.black {
-  background-color: black;
-  color: white;
-  height: 42px;
   width: 100%;
 }
 .max_width {
@@ -52,12 +46,16 @@ section, header, footer {
   float: left;
   margin: 0 auto;
   width: 100%;
-
 }
 
+
+
 /* header*/
-header {
+.black {
+  background-color: black;
+  color: white;
   height: 45px;
+  width: 100%;
 }
 span {
   color: rgb(39, 199, 171);
@@ -83,7 +81,7 @@ li {
 
 /*sekcja gradient*/
 .gradient {
-  height: 400px;
+  height: 450px;
   background-image: linear-gradient(#fcfff4);
   background: #fcfff4; /* Old browsers */
   background: -moz-linear-gradient(top, #fcfff4 0%, #dfe5d7 75%, #b3bead 100%); /* FF3.6-15 */
@@ -156,16 +154,16 @@ button {
   margin-right: 0;
 }
 
-/* sekcja white*/
+/* section white*/
 .white {
   background-color: white;
-  height: 350px;
+  height: 370px;
 }
 .small_box {
   width: 320px;
   display: inline-block;
   float: left;
-  margin: 30px 30px 70px 0;
+  margin: 30px 30px 50px 0;
   position: relative;
 }
 .box1 {
@@ -237,14 +235,14 @@ button {
   line-height: 1.5;
 }
 .longer {
-  height: 255px;
+  height: 260px;
+  border: 1px solid grey;
 }
 
 /*sekcja grey*/
 .grey {
   background-color: rgb(241, 241, 241);
-  height: 700px;
-
+  height: 680px;
 }
 .over_boxes {
   height: 60px;
@@ -282,7 +280,6 @@ button {
   display: block;
   content: "";
 }
-
 .kolko {
   width: 30px;
   height: 30px;
@@ -332,21 +329,20 @@ button {
 .kreska {
   height: 3px;
 }
-
 .slice {
   width: 100%;
 }
 
 /*section form*/
 .form {
-  height: 540px;
+  height: 240px;
 }
 form {
   display: block;
   float: left:
 }
 .left_area {
-width: 60%;
+width: 65%;
 float: left;
 display: inline-block;
 }
@@ -356,21 +352,21 @@ input {
   width: 95%;
   border: 1px solid grey;
   height: 65px;
-  margin-top: 20px;
+  margin-top: 15px;
   margin-bottom: 10px;
 }
 textarea {
   width: 95%;
   border: 1px solid grey;
   height: 180px;
-  margin-top: 20px;
+  margin-top: 15px;
   font-size: 2em;
   color: rgb(241 241 241);
   padding-left: 10px;
 }
 
 .right_area {
-width: 27%;
+width: 30%;
 float: right;
 display: inline-block;
 }
@@ -381,39 +377,74 @@ display: inline-block;
   background-size: cover;
   width: 260px;
   height: 220px;
-  margin-left: 60px;
+  margin: 0 50px 0 0;
 }
-
+.checking {
+  position: relative;
+}
 .agree {
-  float: right;
+  float: left;
   display: inline-block;
   width: 80%;
   font-size: 1.4em;
-  margin-left: 10px;
-  color: rgb(228, 228, 228);
+  color: grey;
+  margin-left: 45px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 .tick {
   width: 30px;
   height: 30px;
-  border: 1px solid rgb(241, 241, 241);
+  border: 1px solid grey;
   float: left;
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 10px;
   margin-left: 30px;
   background-image: url(../images/form_ok.jpg);
   background-size: cover;
   background-position: center;
+  position: absolute;
+  top: 20px;
+  left: -30px;
 }
+
+/*footer*/
 .icons {
-  height: 12px;
-  display: block;
-  height:
+  display: inline-block;
+}
+.icon {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.flickr {
+  background-image: url(../images/flickr.png);
+  background-position: center;
+  background-size: cover;
+}
+.vimeo {
+  background-image: url(../images/vimeo.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.pinterest {
+  background-image: url(../images/pinterest.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.twitter {
+  background-image: url(../images/twitter.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .sit {
   text-align: right;
   font-weight: 700;
+  padding-top: 5px;
 }
 .sitOn {
   display: block;
