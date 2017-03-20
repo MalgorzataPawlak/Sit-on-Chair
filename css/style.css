@@ -27,7 +27,6 @@ body {
 
 header {
   color: black;
-  width: 100%;
 }
 div {
   border: 0px solid red;
@@ -50,7 +49,7 @@ section, header, footer {
 
 
 
-/* header*/
+/*header*/
 .black {
   background-color: black;
   color: white;
@@ -59,27 +58,44 @@ section, header, footer {
 }
 span {
   color: rgb(39, 199, 171);
-  font-weight: 400;
+  font-family: ralewaybold;
 }
 h1 {
   padding: 15px;
   float: left;
-  font-size: 14px;
+  font-size: 1.2em;
 }
 nav {
   float: right;
   color: white;
+  position: relative;
 }
-
-li {
+nav li {
   color: white;
-  font-size: 14px;;
+  font-size: 1.2em;
+  font-weight: 600;
   padding: 15px;
   display: inline-block;
-  font-size: 14px;
 }
+.menu {
+  width: 130px;
+  height: 100px;
+  background-color: black;
+  color: white;
+  font-size: 1em;
+  padding-top: 5px;
+  line-height: 0.1;
+  position: absolute;
+  top: 55px;
+  left: -20px;
+  visibility: hidden;
+}
+nav ul li:hover .menu {
+  visibility: visible;
+  }
 
-/*sekcja gradient*/
+
+/*section gradient*/
 .gradient {
   height: 450px;
   background-image: linear-gradient(#fcfff4);
@@ -97,7 +113,7 @@ li {
   display: inline-block;
   font-size: 4em;
   padding: 150px 10px 120px 10px;
-
+  font-weight: lighter;
 }
 h2 {
   font-size: 3em;
@@ -157,7 +173,7 @@ h2 {
 /* section white*/
 .white {
   background-color: white;
-  height: 370px;
+  height: 350px;
 }
 .small_box {
   width: 320px;
@@ -174,7 +190,7 @@ h2 {
   background-position: top;
   width: 100%;
   height: 100%;
-  border: 1px solid grey;
+  border: 1px solid rgb(228, 228, 228);
   }
 .box2 {
   background-image: url(../images/box2_img.jpg);
@@ -184,7 +200,7 @@ h2 {
   background-position: top;
   width: 100%;
   height: 100%;
-  border: 1px solid grey;
+  border: 1px solid rgb(228, 228, 228);
 }
 .bar {
   background-color: white;
@@ -201,11 +217,12 @@ h2 {
 
 .name {
   font-size: 1.2em;
+  font-family: ralewaybold;
   color: black;
   margin-left: 20px;
   margin-top: 5px;
   padding: 5px;
-  font-weight: 600;
+
   z-index: 2;
   position: absolute;
   bottom: 30px;
@@ -218,7 +235,7 @@ h2 {
   width: 135px;
   height: 7px;
   position: absolute;
-  bottom: 18px;
+  bottom: 25px;
   margin-left: 25px;
   z-index: 3;
 }
@@ -236,24 +253,26 @@ h2 {
 }
 .longer {
   height: 260px;
-  border: 1px solid grey;
+  border: 1px solid rgb(228, 228, 228);
 }
 
 /*section grey*/
 .grey {
   background-color: rgb(241, 241, 241);
-  height: 680px;
+  height: 700px;
+  padding-top: 10px;
 }
 .over_boxes {
   height: 60px;
   width: 100%;
   color: black;
-  font-size: 1.5em;
+  font-size: 1.8em;
   font-weight: 700;
   position: relative;
   display: block;
   padding-bottom: 10px;
   margin-top: 30px;
+  margin-bottom: 5px;
 }
 .long_line {
   width: 320px;
@@ -261,13 +280,13 @@ h2 {
   height: 7px;
   position: absolute;
   left: -25px;
-  top: -5px;
+  top: 2px;
   margin-left: 25px;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   }
 .vertical {
   height: 500px;
-  border: 1px solid grey;
+  border: 2px solid rgb(228, 228, 228);
   position: relative;
   background-color: white;
 }
@@ -295,7 +314,7 @@ h2 {
   width: 130px;
   height: 130px;
   border-radius: 50%;
-  border: 1px solid grey;
+  border: 1px solid rgb(228, 228, 228);
   margin: 0 auto;
   display: block;
   font-size: 3.8em;
@@ -319,7 +338,7 @@ sup {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  border: 1px solid grey;
+  border: 1px solid rgb(228, 228, 228);
   position: absolute;
   left: 130px;
   top: -40px;
@@ -329,11 +348,11 @@ sup {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  border: 1px solid grey;
+  border: 1px solid rgb(228, 228, 228);
   position: absolute;
   left: 145px;
   top: -25px;
-  background-color: grey;
+  background-color: rgb(228, 228, 228);;
   z-index: 2;
   margin: 0 auto;
 }
@@ -387,6 +406,7 @@ sup {
 .green {
   background-color: rgb(39, 199, 171);
   color: white !important;
+  border:  1px solid rgb(39, 199, 171);
 }
 .blank {
   background-color: white;
@@ -401,33 +421,36 @@ form {
   float: left:
 }
 .left_area {
-width: 65%;
-float: left;
-display: inline-block;
+  width: 65%;
+  float: left;
+  display: inline-block;
 }
 input {
   font-size: 2em;
+  font-family: ralewayregular;
   padding-left: 10px;
   width: 95%;
-  border: 1px solid grey;
+  border: 1px solid rgb(39, 199, 171);
   height: 65px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 textarea {
   width: 95%;
-  border: 1px solid grey;
+  border: 1px solid rgb(39, 199, 171);
   height: 180px;
   margin-top: 10px;
   font-size: 2em;
+  font-family: ralewayregular;
   color: rgb(241 241 241);
   padding-left: 10px;
+  padding-top: 15px;
 }
 
 .right_area {
-width: 30%;
-float: right;
-display: inline-block;
+  width: 30%;
+  float: right;
+  display: inline-block;
 }
 .red-chair {
   background-image: url(../images/red_chair.png);
@@ -454,7 +477,7 @@ display: inline-block;
 .tick {
   width: 30px;
   height: 30px;
-  border: 1px solid grey;
+  border: 1px solid rgb(39, 199, 171);
   float: left;
   display: inline-block;
   margin-right: 10px;
